@@ -37,6 +37,6 @@ for i in range(amount):
     ]
 
     rest = longitud - len(password)
-    password += random.choices(all, k=rest)
+    password += random.choices(everything, k=rest)
     random.shuffle(password)
     print(f"{i+1}: {''.join(password)}")
